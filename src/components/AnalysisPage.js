@@ -3,7 +3,7 @@ import styles from "../styles/AnalysisPage.module.css";
 
 import Header from "./Header";
 import Subtitle from "./Subtitle";
-import ImageUploader from "./ImageUploader";
+import ImageDisplay from "./ImageDisplay";
 import PickImageButton from "./PickImageButton";
 
 const TITLE = "Does Your Cat Eat Can Can?";
@@ -19,7 +19,7 @@ export default function AnalysisPage() {
         <Subtitle subtitle={SUBTITLE} />
         <PickImageButton setImage={setImage} />
       </div>
-      <ImageUploader image={image} />
+      <ImageDisplay image={image} />
     </div>
   );
 }
