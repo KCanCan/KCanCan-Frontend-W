@@ -8,4 +8,5 @@
   font-size: 5rem;
   color: var(--black);
   margin-right: 1rem;
+  word-wrap: break-word;
 }
