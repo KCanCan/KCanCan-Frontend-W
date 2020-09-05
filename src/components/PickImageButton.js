@@ -4,22 +4,29 @@ import styles from "../styles/PickImageButton.module.css";
 
 export default function PickImageButton({ setImage }) {
   const fileInput = useRef();
-  const handleSetNode = (node) => {
+
+  function handleSetNode(node) {
     fileInput.current = node;
-  };
+  }
+
+  function handleChangeImage(e) {
+    setImage(e.target.files[0]);
+  }
+
+  function handleClick() {
+    fileInput.current.click();
+  }
   return (
     <>
       <input
         accept="image/*"
         style={{ display: "none" }}
         type="file"
-        ref={(node) => handleSetNode(node)}
+        ref={handleSetNode}
+        onChange={handleChangeImage}
       />
-      <button
-        className={styles.pick_button}
-        onClick={() => fileInput.current.click()}
-      >
-        Pick Image
+      <button className={styles.pick_button} onClick={handleClick}>
+        Pick an Image
       </button>
     </>
   );
