@@ -6,7 +6,6 @@ import AnalysisPage from "./components/AnalysisPage";
 function App() {
   return (
     <div className="App">
-      {/** TODO: Navigation bar */}
       <AnalysisPage />
     </div>
   );
