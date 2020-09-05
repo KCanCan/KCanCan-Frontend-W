@@ -5,6 +5,7 @@ import Header from "./Header";
 import Subtitle from "./Subtitle";
 import ImageDisplay from "./ImageDisplay";
 import PickImageButton from "./PickImageButton";
+import Chart from "./Chart";
 
 const TITLE = "Does Your Cat Eat Can Can?";
 const SUBTITLE = "TODO: Subtitle here.";
@@ -18,6 +19,7 @@ export default function AnalysisPage() {
         <Header title={TITLE} />
         <Subtitle subtitle={SUBTITLE} />
         <PickImageButton image={image} setImage={setImage} />
+        <Chart />
       </div>
       <ImageDisplay image={image} setImage={setImage} />
     </div>
