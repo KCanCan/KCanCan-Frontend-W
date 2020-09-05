@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import cx from "classnames";
 
 import styles from "../styles/PickImageButton.module.css";
 
-export default function PickImageButton({ setImage }) {
+export default function PickImageButton({ image, setImage }) {
+  const [progress, setProgress] = useState(100);
   const fileInput = useRef();
 
   function handleSetNode(node) {
@@ -16,6 +18,10 @@ export default function PickImageButton({ setImage }) {
   function handleClick() {
     fileInput.current.click();
   }
+
+  function handleSubmit() {
+    console.log("submitted");
+  }
   return (
     <>
       <input
@@ -25,9 +31,22 @@ export default function PickImageButton({ setImage }) {
         ref={handleSetNode}
         onChange={handleChangeImage}
       />
-      <button className={styles.pick_button} onClick={handleClick}>
-        Pick an Image
-      </button>
+      <div className={styles.button_box}>
+        <button
+          className={cx(styles.pick_button, styles.bgc_secondary)}
+          onClick={handleClick}
+        >
+          {image ? "Replace" : "Pick an Image"}
+        </button>
+        {image ? (
+          <button
+            className={cx(styles.pick_button, styles.bgc_primary)}
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
+        ) : null}
+      </div>
     </>
   );
 }

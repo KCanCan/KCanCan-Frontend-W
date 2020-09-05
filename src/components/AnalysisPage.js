@@ -17,7 +17,7 @@ export default function AnalysisPage() {
       <div className={styles.left_col_container}>
         <Header title={TITLE} />
         <Subtitle subtitle={SUBTITLE} />
-        <PickImageButton setImage={setImage} />
+        <PickImageButton image={image} setImage={setImage} />
       </div>
       <ImageDisplay image={image} setImage={setImage} />
     </div>
