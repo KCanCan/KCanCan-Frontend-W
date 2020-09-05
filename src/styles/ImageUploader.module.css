@@ -3,4 +3,7 @@
   background-color: var(--black);
   margin: 15px;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
