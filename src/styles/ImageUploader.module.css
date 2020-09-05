@@ -1,0 +1,6 @@
+.right_col_container {
+  width: 50%;
+  background-color: var(--black);
+  margin: 15px;
+  border-radius: 30px;
+}
