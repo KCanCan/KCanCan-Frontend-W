@@ -4,7 +4,6 @@ import cx from "classnames";
 import styles from "../styles/PickImageButton.module.css";
 
 export default function PickImageButton({ image, setImage }) {
-  const [progress, setProgress] = useState(100);
   const fileInput = useRef();
 
   function handleSetNode(node) {
