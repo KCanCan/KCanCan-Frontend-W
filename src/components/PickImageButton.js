@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import cx from "classnames";
 
 import styles from "../styles/PickImageButton.module.css";
