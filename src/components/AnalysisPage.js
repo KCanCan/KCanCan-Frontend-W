@@ -5,7 +5,7 @@ import Header from "./Header";
 import Subtitle from "./Subtitle";
 import ImageUploader from "./ImageUploader";
 
-const TITLE = "Does Your Cat Eats Can Can?";
+const TITLE = "Does Your Cat Eat Can Can?";
 const SUBTITLE = "TODO: Subtitle here.";
 
 export default function AnalysisPage() {
