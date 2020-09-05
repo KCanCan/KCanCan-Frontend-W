@@ -4,6 +4,7 @@ import styles from "../styles/AnalysisPage.module.css";
 import Header from "./Header";
 import Subtitle from "./Subtitle";
 import ImageUploader from "./ImageUploader";
+import PickImageButton from "./PickImageButton";
 
 const TITLE = "Does Your Cat Eat Can Can?";
 const SUBTITLE = "TODO: Subtitle here.";
@@ -16,8 +17,9 @@ export default function AnalysisPage() {
       <div className={styles.left_col_container}>
         <Header title={TITLE} />
         <Subtitle subtitle={SUBTITLE} />
+        <PickImageButton setImage={setImage} />
       </div>
-      <ImageUploader />
+      <ImageUploader image={image} />
     </div>
   );
 }
