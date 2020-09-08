@@ -1,19 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
-import styles from "../styles/Chart.module.css";
+import React from "react";
+import ChartAnimate from "./ChartAnimate";
 
-export default function Chart({ data }) {
-  const [width, setWidth] = useState(500);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setWidth(parseInt(400 * Math.random() + 100));
-  //     console.log(width);
-  //   }, 1000);
-  // }, [width]);
-
+export default function Chart() {
   return (
-    <div>
-      <div className={styles.box} style={{ width: width + "px" }}></div>
-    </div>
+    <>
+      <ChartAnimate />
+    </>
   );
 }

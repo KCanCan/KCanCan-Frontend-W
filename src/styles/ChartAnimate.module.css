@@ -1,0 +1,19 @@
+.box {
+  height: 4rem;
+  background-color: var(--black);
+  border-radius: 0 5px 5px 0;
+  margin: 10px 0;
+}
+
+.box_wrapper {
+  margin: 0;
+}
+
+.container {
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  /* background-color: pink; */
+  margin-bottom: 15%;
+}
