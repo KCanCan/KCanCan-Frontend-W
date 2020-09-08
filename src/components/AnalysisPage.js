@@ -19,7 +19,7 @@ export default function AnalysisPage() {
         <Header title={TITLE} />
         <Subtitle subtitle={SUBTITLE} />
         <PickImageButton image={image} setImage={setImage} />
-        <Chart />
+        {/* {image ? null : <Chart />} */}
       </div>
       <ImageDisplay image={image} setImage={setImage} />
     </div>

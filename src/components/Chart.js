@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import styles from "../styles/Chart.module.css";
+import React from "react";
+import ChartAnimate from "./ChartAnimate";
 
-export default function Chart({ data }) {
-  const [width, setWidth] = useState(500);
+export default function Chart() {
   return (
-    <div>
-      <div className={styles.box}></div>
-    </div>
+    <>
+      <ChartAnimate />
+    </>
   );
 }
